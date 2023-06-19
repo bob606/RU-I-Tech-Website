@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    // base rule set
+    "next/core-web-vitals",
+    "@typedigital/eslint-config",
+    "@typedigital/eslint-config/react"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    // add the environment you use - refer to https://eslint.org/docs/user-guide/configuring/language-options#using-configuration-files
+    "node": true
+  },
+  // ignore configs in other directories
+  "root": true
 }
