@@ -11,6 +11,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const hi = 0;
   return (
     <html lang='en'>
       <body>{children}</body>
