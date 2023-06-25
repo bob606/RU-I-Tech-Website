@@ -1,4 +1,4 @@
-# Dependendent issues 🔗
+# Dependent issues 🔗
 Depends on 
 
 # 📲 What was done
