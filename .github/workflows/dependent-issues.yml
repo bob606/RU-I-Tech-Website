@@ -7,21 +7,21 @@ on:
       - edited
       - closed
       - reopened
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - closed
-      - reopened
-      # Makes sure we always add status check for PRs. Useful only if
-      # this action is required to pass before merging. Otherwise, it
-      # can be removed.
-      - synchronize
+  # pull_request_target:
+  #   types:
+  #     - opened
+  #     - edited
+  #     - closed
+  #     - reopened
+  #     # Makes sure we always add status check for PRs. Useful only if
+  #     # this action is required to pass before merging. Otherwise, it
+  #     # can be removed.
+  #     - synchronize
 
   # Schedule a daily check. Useful if you reference cross-repository
   # issues or pull requests. Otherwise, it can be removed.
-  schedule:
-    - cron: '0 0 * * *'
+  # schedule:
+  #   - cron: '0 0 * * *'
 
 jobs:
   check:
@@ -36,7 +36,7 @@ jobs:
 
         with:
           # (Optional) The label to use to mark dependent issues
-          label: dependent
+          label: blocked
 
           # (Optional) Enable checking for dependencies in issues.
           # Enable by setting the value to "on". Default "off"
@@ -48,12 +48,10 @@ jobs:
 
           # (Optional) A comma-separated list of keywords. Default
           # "depends on, blocked by"
-          keywords: depends on, blocked by
+          keywords: blocked by
 
           # (Optional) A custom comment body. It supports `{{ dependencies }}` token.
           comment: >
-            This PR/issue depends on:
+            This issue is blocked by:
 
             {{ dependencies }}
-
-            By **[Dependent Issues](https://github.com/z0al/dependent-issues)** (🤖). Happy coding!
