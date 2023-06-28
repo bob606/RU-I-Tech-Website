@@ -1,5 +1,5 @@
-# Dependent issues 🔗
-Depends on 
+# Issue
+_(Link issue with # symbol)_
 
 # 📲 What was done
 
@@ -17,11 +17,7 @@ Jira, Figma, Vercel preview, screenshots, external resources?
 
 # 📋 QA
 
-Instructions for anyone to be able to QA this work.
-
-# 📖 Issue
-
-[Name of Jira Story](Jira link)
+Instructions for anyone to be able to QA this work. *Don't leave this one out*
 
 # ☑️ Checklist
 - [ ] functional criterias and acceptance criterias are fulfiled
