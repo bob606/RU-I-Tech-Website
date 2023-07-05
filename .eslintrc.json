@@ -21,9 +21,7 @@
     "no-void": "off", // due to next api routes we have to return on void - so we need the void operator
     "promise/prefer-await-to-then": "off", // too opinionated
     "@typescript-eslint/no-unused-vars": "off", // covered by no-unused-vars
-    "no-unused-vars": "warn", // makes you think you used the wrong type, when new var instantly get marked as errors
-    "quotes": "off", //allow use of all three quote types
-    "linebreak-style": "off", //This rule enforces consistent line endings independent of operating system, VCS, or editor used across your codebase.
+    "no-unused-vars": "warn", // makes you think you used the wrong type, when new var instantly get marked as error
     "react/require-default-props":"off", //This rule aims to ensure that any non-required prop types of a component has a corresponding defaultProps value.
     "import/extensions": [
       "error",
