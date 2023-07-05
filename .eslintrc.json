@@ -21,7 +21,8 @@
     "no-void": "off", // due to next api routes we have to return on void - so we need the void operator
     "promise/prefer-await-to-then": "off", // too opinionated
     "@typescript-eslint/no-unused-vars": "off", // covered by no-unused-vars
-    "no-unused-vars": "warn" // makes you think you used the wrong type, when new var instantly get marked as errors
+    "no-unused-vars": "warn", // makes you think you used the wrong type, when new var instantly get marked as errors
+    "linebreak-style": "off" // causes issues on windows machines and is automatically filtered by GitHub
   },
   "plugins": ["@typescript-eslint"],
   // ignore configs in other directories
