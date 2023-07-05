@@ -17,7 +17,8 @@ Jira, Figma, Vercel preview, screenshots, external resources?
 
 # 📋 QA
 
-Instructions for anyone to be able to QA this work. *Don't leave this one out*
+Instructions for anyone to be able to QA (quality assurance) this work. E.g. sign-in, click on the events section in the menu page and see how you get taken to the events page. Sign-out and see how the events menu point disappears.  
+*Don't leave this one out*
 
 # ☑️ Checklist
 - [ ] functional criterias and acceptance criterias are fulfiled

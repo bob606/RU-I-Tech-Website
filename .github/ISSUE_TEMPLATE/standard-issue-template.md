@@ -7,16 +7,16 @@ assignees: ''
 
 ---
 
-## User Story
+## User Story 📜
 Put user story in the following format here: _As a ... I want [behavior] in order to [...]_
 
-## (Blockers) 
+## Blockers ⛔
 Blocked by _reference issue with #_
 
-## Acceptance Criteria
+## Acceptance Criteria ✓
 - 
 
-## References
+## References 🔗
 _Insert Figma Links etc._
 
-## (Implementation Advice)
+## Implementation Advice ℹ
