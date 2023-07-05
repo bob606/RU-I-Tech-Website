@@ -23,6 +23,17 @@
     "@typescript-eslint/no-unused-vars": "off", // covered by no-unused-vars
     "no-unused-vars": "warn", // makes you think you used the wrong type, when new var instantly get marked as errors
     "linebreak-style": "off" // causes issues on windows machines and is automatically filtered by GitHub
+    "react/require-default-props":"off", //This rule aims to ensure that any non-required prop types of a component has a corresponding defaultProps value.
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ] //Next.js automatically resolves package import extensions whereas eslint requires the extension to be present, this rule disables the rule check
   },
   "plugins": ["@typescript-eslint"],
   // ignore configs in other directories
