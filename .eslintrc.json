@@ -34,7 +34,7 @@
         "ts": "never",
         "tsx": "never"
       }
-   ]
+   ] //Next.js automatically resolves package import extensions whereas eslint requires the extension to be present, this rule disables the rule check
   },
   "plugins": ["@typescript-eslint"],
   // ignore configs in other directories
