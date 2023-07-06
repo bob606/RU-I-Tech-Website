@@ -1,3 +1,8 @@
+# Starting up Project
+Run the following commands:
+`npm install`
+`npm run dev`
+
 # RU-I-Tech-Website planned Features
 
 ## Landing Page 
