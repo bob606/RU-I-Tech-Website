@@ -1,14 +1,6 @@
 import Image from 'next/image';
-import { groq } from 'next-sanity';
-import { client } from '../../sanity/lib/client';
-import { Button } from '@/components/ui/button';
 
-const query = groq`*[_type=='landing']`;
-
-export default async function Home() {
-  const fetchHero = await client.fetch(query);
-  const [heroContent] = [fetchHero[0]];
-
+export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between min-h-screen p-24'>
       <div className='z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex'>
@@ -48,8 +40,7 @@ export default async function Home() {
           priority
         />
       </div>
-      <Button>hello</Button>
-      <h1>{heroContent.heading}</h1>
+
       <div className='grid mb-32 text-center lg:mb-0 lg:grid-cols-4 lg:text-left'>
         <a
           href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
